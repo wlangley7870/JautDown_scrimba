@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+    color: black;
+    user-select: none;
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+
+    border: 2px black solid;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 45px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: black;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#add-button {
+    color: #FDFDFD;
+    background-color: #197BBD;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#add-button:hover {
+    background-color: #125E8A;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #DCE1EB;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+ul li:hover {
+    background-color: #C9E5F8;
+    cursor: pointer;
+}
+
+#appName {
+
+    font-family: "Zeyada";
+    font-size: 48px;
+    margin: -32px;
+    padding: 4px;   
+    width: 50%;
+}
+
+
+
+.dark-mode {
+
+    border-radius: 8px;
+    #appName {
+        color: white;
+    }
+    li {
+        background:rgba(0, 0, 0, 0.23);
+        color: white;
+    }
+    li:hover {
+        background: rgba(0,0,0,.75);
+        
+    }
+    .container {
+        background: rgba(0, 0, 0, 0.75);
+    }
+    #input-field {
+        background-color:rgba(0, 0, 0, 0.23);
+        color: white;
+    }
+
+}
+
+#themeToggle {
+    
+    width: 28px;
+    height: 28px;
+    margin-left: 90%;
+    
+}

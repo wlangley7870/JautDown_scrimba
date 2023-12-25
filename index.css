@@ -1,3 +1,6 @@
+/* JautDown, super simple shopping list made as part of the scrimba course
+    github.com/wlangley7870 */
+
 html, body {
     margin: 0;
     padding: 20px;
@@ -98,7 +101,8 @@ ul li:hover {
 
 .dark-mode {
 
-    border-radius: 8px;
+    
+
     #appName {
         color: white;
     }
@@ -127,3 +131,6 @@ ul li:hover {
     margin-left: 90%;
     
 }
+
+
+

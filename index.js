@@ -1,3 +1,6 @@
+//JautDown, super simple shopping list made as part of the scrimba course
+//github.com/wlangley7870 
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
@@ -14,12 +17,21 @@ const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
 const toggleImgEl = document.getElementById("themeToggle")
 const appNameEl = document.getElementById("appName")
-
+const abt = document.getElementById("abt")
+const abtClose = document.getElementById("close")
 let activeEl = document.activeElement
 
 
 addButtonEl.addEventListener("click", function() {
+    if(inputFieldEl.value) {
     addToDb();
+    }
+})
+
+appNameEl.addEventListener("click", function(){
+
+   
+
 })
 
 
@@ -28,7 +40,9 @@ addButtonEl.addEventListener("click", function() {
 document.addEventListener("keyup", event => {
     if (event.code === "Enter" ) {
         if(document.activeElement === inputFieldEl) {
-            addToDb();
+            if(inputFieldEl.value) {
+                addToDb();
+            }
         } 
     }
 })
@@ -41,7 +55,9 @@ toggleImgEl.addEventListener("click", function(){
 
 })
 
-
+function close() {
+    console.log("sweet sassy molassy")
+}
 
 onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists()) {
@@ -100,12 +116,7 @@ function toggleAppTheme() {
     let element = document.body;
     
     element.classList.toggle("dark-mode")
-   
-    
-
 }
-
-
 
 function toggleIcon() {
 
@@ -118,3 +129,4 @@ function toggleIcon() {
 
         return newImg;
     }
+

@@ -55,10 +55,6 @@ toggleImgEl.addEventListener("click", function(){
 
 })
 
-function close() {
-    console.log("sweet sassy molassy")
-}
-
 onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
